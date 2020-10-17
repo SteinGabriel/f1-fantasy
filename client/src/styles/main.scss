@@ -1,0 +1,41 @@
+// The order of the imports matters in this case. For example in order to
+// a variable be accessible within another scss file, the utils/variables
+// file needs to be imported before. That's the reason why the variables
+// file is on the top of the imports list.
+// Also if there are classes or variables with the same name
+// in multiple files, the last imported file will overwrite the previous values.
+
+// ----------------------------------------------------------------------
+// Vendors
+// ----------------------------------------------------------------------
+@import 'vendors/bootstrap/bootstrap-grid.scss';
+
+// ----------------------------------------------------------------------
+// Utils
+// ----------------------------------------------------------------------
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'utils/helpers';
+
+// ----------------------------------------------------------------------
+// base
+// ----------------------------------------------------------------------
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+
+// ----------------------------------------------------------------------
+// components
+// ----------------------------------------------------------------------
+@import 'components/components';
+
+// ----------------------------------------------------------------------
+// pages
+// ----------------------------------------------------------------------
+@import 'pages/pages';
+
+// ----------------------------------------------------------------------
+// themes
+// ----------------------------------------------------------------------
+@import 'themes/default';
