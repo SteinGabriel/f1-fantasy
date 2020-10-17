@@ -27,7 +27,7 @@ app.delete('/', (req, res) => {
   // DELETE controller function 
 })
 
-// Starts a server, serving HTTP methods endpoints to specified port 
+// Starts a server, serving backend API endpoints to specified port 
 app.listen(port, () => {
   console.log('Example running on port ' + port);
 })
