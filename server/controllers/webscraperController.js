@@ -26,7 +26,7 @@ exports.getDriversOverview = async function (req, res) {
         "name": row[0],
         "averageOvertakes": row[1],
         "beatTeammateRate": row[2],
-        "dNFRate": row[3],
+        "dnfRate": row[3],
         "top5HighestScorer": row[4],
         "totalPodiums": row[5],
         "totalFastestLaps": row[6],
