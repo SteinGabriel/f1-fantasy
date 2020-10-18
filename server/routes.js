@@ -1,9 +1,12 @@
 const express = require('express')
 const router = express.Router()
+const webscrapperController = require('./controllers/webscraperController')
 
 router.get('/', (req, res) => {
   res.send('Hello from router!')
 })
+
+router.get('/getDriversOverview', webscrapperController.getDriversOverview)
 
 router.put('/', (req, res) => {
   // PUT controller function 
